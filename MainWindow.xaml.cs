@@ -72,14 +72,21 @@ namespace WpfApp1
 
             // Render the AutoCAD file
             // Replace "path/to/autocad/file.dwg" with the actual path to your AutoCAD file
-            if (File.Exists("path/to/autocad/file.dwg"))
+            if (File.Exists("Airport.dwg"))
             {
                 string path = "Airport.dwg";
                 CadDocument doc = DwgReader.Read(path, onNotification);
 
-                //var autocadFile = new DWGFile("path/to/autocad/file.dwg");
-                //autocadFile.Draw(gl);
-                
+                var layers = doc.Layers;
+
+                // Iterate through layers and extract data
+                foreach (var layer in layers)
+                {
+                    Console.WriteLine("Layer Name: " + layer.Name);
+                    Console.WriteLine("Layer Color: " + layer.Color);
+                    // ... Extract other layer properties
+                }
+
             }
 
         }
