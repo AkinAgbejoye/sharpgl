@@ -1,0 +1,826 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0-windows7.0": {
+      "ACadSharp/1.4.4-alpha": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/ACadSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/ACadSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "AutoCAD.NET/24.3.0": {
+        "type": "package",
+        "dependencies": {
+          "AutoCAD.NET.Core": "[24.3.0]"
+        },
+        "compile": {
+          "lib/net47/AcCui.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/AcDx.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/AcMgd.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/AcMr.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/AcSeamless.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/AcTcMgd.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/AcWindows.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/AdUIMgd.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/AdUiPalettes.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/AdWindows.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net47/AcCui.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/AcDx.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/AcMgd.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/AcMr.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/AcSeamless.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/AcTcMgd.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/AcWindows.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/AdUIMgd.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/AdUiPalettes.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/AdWindows.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "AutoCAD.NET.Core/24.3.0": {
+        "type": "package",
+        "dependencies": {
+          "AutoCAD.NET.Model": "[24.3.0]"
+        },
+        "compile": {
+          "lib/net47/AcCoreMgd.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net47/AcCoreMgd.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "AutoCAD.NET.Model/24.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net47/AcDbMgd.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/acdbmgdbrep.dll": {}
+        },
+        "runtime": {
+          "lib/net47/AcDbMgd.dll": {
+            "related": ".xml"
+          },
+          "lib/net47/acdbmgdbrep.dll": {}
+        }
+      },
+      "Microsoft.CSharp/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "Microsoft.NETCore.Platforms/3.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Microsoft.Win32.SystemEvents/4.7.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.1.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "SharpGL/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/SharpGL.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/SharpGL.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "SharpGL.SceneGraph/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SharpGL": "3.1.1",
+          "System.Drawing.Common": "4.7.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/SharpGL.SceneGraph.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/SharpGL.SceneGraph.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "SharpGL.Serialization/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "SharpGL": "3.1.1",
+          "SharpGL.SceneGraph": "3.1.1"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/SharpGL.Serialization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/SharpGL.Serialization.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "SharpGL.WinForms/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "SharpGL": "3.1.1",
+          "SharpGL.SceneGraph": "3.1.1",
+          "System.Data.DataSetExtensions": "4.5.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/SharpGL.WinForms.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/SharpGL.WinForms.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ],
+        "contentFiles": {
+          "contentFiles/any/netcoreapp3.1/SharpGL.ico": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/netcoreapp3.1/SharpGL.png": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
+      "SharpGL.WPF/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "SharpGL": "3.1.1",
+          "SharpGL.SceneGraph": "3.1.1",
+          "System.Data.DataSetExtensions": "4.5.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/SharpGL.WPF.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/SharpGL.WPF.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "System.Data.DataSetExtensions/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Data.DataSetExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Data.DataSetExtensions.dll": {}
+        }
+      },
+      "System.Drawing.Common/4.7.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "3.1.0",
+          "Microsoft.Win32.SystemEvents": "4.7.0"
+        },
+        "compile": {
+          "ref/netcoreapp3.0/System.Drawing.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Drawing.Common.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll": {
+            "assetType": "runtime",
+            "rid": "unix"
+          },
+          "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ACadSharp/1.4.4-alpha": {
+      "sha512": "opa1RNusOxwAI5XGAqX9iLg52XngRBo5clTRULo4ImGhlC0inXtp0hNL0MbNFDe2Giad03AK5aXZtctmqrh/GQ==",
+      "type": "package",
+      "path": "acadsharp/1.4.4-alpha",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "acadsharp.1.4.4-alpha.nupkg.sha512",
+        "acadsharp.nuspec",
+        "lib/net48/ACadSharp.dll",
+        "lib/net48/ACadSharp.xml",
+        "lib/net5.0/ACadSharp.dll",
+        "lib/net5.0/ACadSharp.xml",
+        "lib/net6.0/ACadSharp.dll",
+        "lib/net6.0/ACadSharp.xml",
+        "lib/netstandard2.1/ACadSharp.dll",
+        "lib/netstandard2.1/ACadSharp.xml"
+      ]
+    },
+    "AutoCAD.NET/24.3.0": {
+      "sha512": "u61vnlIBDgrBu8EvYDxqDwGwGFuZ71ilBvNHbSHe/OJbnhtAILg0RmsoUKdU2NjfMUApnMhCHwp7fzvJCXDvwg==",
+      "type": "package",
+      "path": "autocad.net/24.3.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "adsk.xml",
+        "autocad.net.24.3.0.nupkg.sha512",
+        "autocad.net.nuspec",
+        "lib/net47/AcCui.dll",
+        "lib/net47/AcCui.xml",
+        "lib/net47/AcDx.dll",
+        "lib/net47/AcDx.xml",
+        "lib/net47/AcMgd.dll",
+        "lib/net47/AcMgd.xml",
+        "lib/net47/AcMr.dll",
+        "lib/net47/AcMr.xml",
+        "lib/net47/AcSeamless.dll",
+        "lib/net47/AcSeamless.xml",
+        "lib/net47/AcTcMgd.dll",
+        "lib/net47/AcTcMgd.xml",
+        "lib/net47/AcWindows.dll",
+        "lib/net47/AcWindows.xml",
+        "lib/net47/AdUIMgd.dll",
+        "lib/net47/AdUIMgd.xml",
+        "lib/net47/AdUiPalettes.dll",
+        "lib/net47/AdUiPalettes.xml",
+        "lib/net47/AdWindows.dll",
+        "lib/net47/AdWindows.xml",
+        "license.txt",
+        "tools/install.ps1"
+      ]
+    },
+    "AutoCAD.NET.Core/24.3.0": {
+      "sha512": "aA/V5c/LGahuH9qVI0XghGrZtuNzi0xObm9nJWYy3HsqqnUlZ7YngMuqn0kyigzuj70O2GwF8zpJwgQJmvb83Q==",
+      "type": "package",
+      "path": "autocad.net.core/24.3.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "adsk.xml",
+        "autocad.net.core.24.3.0.nupkg.sha512",
+        "autocad.net.core.nuspec",
+        "lib/net47/AcCoreMgd.dll",
+        "lib/net47/AcCoreMgd.xml",
+        "license.txt",
+        "tools/install.ps1"
+      ]
+    },
+    "AutoCAD.NET.Model/24.3.0": {
+      "sha512": "LV37ByKWj0LbHx4gSznJvkFNmTlGsMOtyXvTcBtz6V+WNFPXHlGCscqz1QJimzjyMJwHxOJKUxfTIJ5a4aXFKw==",
+      "type": "package",
+      "path": "autocad.net.model/24.3.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "adsk.xml",
+        "autocad.net.model.24.3.0.nupkg.sha512",
+        "autocad.net.model.nuspec",
+        "lib/net47/AcDbMgd.dll",
+        "lib/net47/AcDbMgd.xml",
+        "lib/net47/AcDbMgdBrep.xml",
+        "lib/net47/acdbmgdbrep.dll",
+        "license.txt",
+        "tools/install.ps1"
+      ]
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "type": "package",
+      "path": "microsoft.csharp/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/Microsoft.CSharp.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.3/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.xml",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/uap10.0.16299/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "microsoft.csharp.4.7.0.nupkg.sha512",
+        "microsoft.csharp.nuspec",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/Microsoft.CSharp.dll",
+        "ref/netcore50/Microsoft.CSharp.xml",
+        "ref/netcore50/de/Microsoft.CSharp.xml",
+        "ref/netcore50/es/Microsoft.CSharp.xml",
+        "ref/netcore50/fr/Microsoft.CSharp.xml",
+        "ref/netcore50/it/Microsoft.CSharp.xml",
+        "ref/netcore50/ja/Microsoft.CSharp.xml",
+        "ref/netcore50/ko/Microsoft.CSharp.xml",
+        "ref/netcore50/ru/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hans/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hant/Microsoft.CSharp.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/Microsoft.CSharp.dll",
+        "ref/netstandard1.0/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/de/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/es/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/fr/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/it/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ja/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ko/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ru/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hans/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hant/Microsoft.CSharp.xml",
+        "ref/netstandard2.0/Microsoft.CSharp.dll",
+        "ref/netstandard2.0/Microsoft.CSharp.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/uap10.0.16299/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.NETCore.Platforms/3.1.0": {
+      "sha512": "z7aeg8oHln2CuNulfhiLYxCVMPEwBl3rzicjvIX+4sUuCwvXw5oXQEtbiU2c0z4qYL5L3Kmx0mMA/+t/SbY67w==",
+      "type": "package",
+      "path": "microsoft.netcore.platforms/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard1.0/_._",
+        "microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+        "microsoft.netcore.platforms.nuspec",
+        "runtime.json",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Win32.SystemEvents/4.7.0": {
+      "sha512": "mtVirZr++rq+XCDITMUdnETD59XoeMxSpLRIII7JRI6Yj0LEDiO1pPn0ktlnIj12Ix8bfvQqQDMMIF9wC98oCA==",
+      "type": "package",
+      "path": "microsoft.win32.systemevents/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Win32.SystemEvents.dll",
+        "lib/net461/Microsoft.Win32.SystemEvents.xml",
+        "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
+        "lib/netstandard2.0/Microsoft.Win32.SystemEvents.xml",
+        "microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+        "microsoft.win32.systemevents.nuspec",
+        "ref/net461/Microsoft.Win32.SystemEvents.dll",
+        "ref/net461/Microsoft.Win32.SystemEvents.xml",
+        "ref/net472/Microsoft.Win32.SystemEvents.dll",
+        "ref/net472/Microsoft.Win32.SystemEvents.xml",
+        "ref/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
+        "ref/netstandard2.0/Microsoft.Win32.SystemEvents.xml",
+        "runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.SystemEvents.dll",
+        "runtimes/win/lib/netcoreapp2.0/Microsoft.Win32.SystemEvents.xml",
+        "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll",
+        "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.xml",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "SharpGL/3.1.1": {
+      "sha512": "tLTsMAl0XMjLhVK++ga65tObn/8IyPEfZ9i+icELcAPJ92mgB/DllVlfDBNJOP5T3C4GuT6YEZn3CVR11GH2qQ==",
+      "type": "package",
+      "path": "sharpgl/3.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/SharpGL.dll",
+        "lib/net40/SharpGL.xml",
+        "lib/net45/SharpGL.dll",
+        "lib/net45/SharpGL.xml",
+        "lib/net472/SharpGL.dll",
+        "lib/net472/SharpGL.xml",
+        "lib/netcoreapp2.0/SharpGL.dll",
+        "lib/netcoreapp2.0/SharpGL.xml",
+        "lib/netcoreapp3.0/SharpGL.dll",
+        "lib/netcoreapp3.0/SharpGL.xml",
+        "lib/netcoreapp3.1/SharpGL.dll",
+        "lib/netcoreapp3.1/SharpGL.xml",
+        "sharpgl.3.1.1.nupkg.sha512",
+        "sharpgl.nuspec"
+      ]
+    },
+    "SharpGL.SceneGraph/3.1.1": {
+      "sha512": "VY4SS/y8Ob8Mbi/oqh0lHA0SRCfRCeZ+/Kk8AM4EAw/vhHdpS1LEuVa0hVE3gA84tp3YFVmwXn8GjeLIA/VfmA==",
+      "type": "package",
+      "path": "sharpgl.scenegraph/3.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/SharpGL.SceneGraph.dll",
+        "lib/net40/SharpGL.SceneGraph.xml",
+        "lib/net45/SharpGL.SceneGraph.dll",
+        "lib/net45/SharpGL.SceneGraph.xml",
+        "lib/net472/SharpGL.SceneGraph.dll",
+        "lib/net472/SharpGL.SceneGraph.xml",
+        "lib/netcoreapp2.0/SharpGL.SceneGraph.dll",
+        "lib/netcoreapp2.0/SharpGL.SceneGraph.xml",
+        "lib/netcoreapp3.0/SharpGL.SceneGraph.dll",
+        "lib/netcoreapp3.0/SharpGL.SceneGraph.xml",
+        "lib/netcoreapp3.1/SharpGL.SceneGraph.dll",
+        "lib/netcoreapp3.1/SharpGL.SceneGraph.xml",
+        "sharpgl.scenegraph.3.1.1.nupkg.sha512",
+        "sharpgl.scenegraph.nuspec"
+      ]
+    },
+    "SharpGL.Serialization/3.1.1": {
+      "sha512": "VZys4ZgkzVDWTQhxnRGS/MsnTMl+p7qqcyOruRAfBI/N9XfGTJqkULdVJ3BuiXD5njVxCp7eTKEyMp/mWJwpMg==",
+      "type": "package",
+      "path": "sharpgl.serialization/3.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/SharpGL.Serialization.dll",
+        "lib/net40/SharpGL.Serialization.xml",
+        "lib/net45/SharpGL.Serialization.dll",
+        "lib/net45/SharpGL.Serialization.xml",
+        "lib/net472/SharpGL.Serialization.dll",
+        "lib/net472/SharpGL.Serialization.xml",
+        "lib/netcoreapp2.0/SharpGL.Serialization.dll",
+        "lib/netcoreapp2.0/SharpGL.Serialization.xml",
+        "lib/netcoreapp3.0/SharpGL.Serialization.dll",
+        "lib/netcoreapp3.0/SharpGL.Serialization.xml",
+        "lib/netcoreapp3.1/SharpGL.Serialization.dll",
+        "lib/netcoreapp3.1/SharpGL.Serialization.xml",
+        "sharpgl.serialization.3.1.1.nupkg.sha512",
+        "sharpgl.serialization.nuspec"
+      ]
+    },
+    "SharpGL.WinForms/3.1.1": {
+      "sha512": "n+4xnGkVPDRymxP4vPhtcPFw794KrESaXLIBCsDxuj//zx31SGmG1B53Y63x9cS1xlaH6KotHV1OV/MLvTKI0A==",
+      "type": "package",
+      "path": "sharpgl.winforms/3.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/SharpGL.ico",
+        "content/SharpGL.png",
+        "contentFiles/any/net40/SharpGL.ico",
+        "contentFiles/any/net40/SharpGL.png",
+        "contentFiles/any/net45/SharpGL.ico",
+        "contentFiles/any/net45/SharpGL.png",
+        "contentFiles/any/net472/SharpGL.ico",
+        "contentFiles/any/net472/SharpGL.png",
+        "contentFiles/any/netcoreapp3.0/SharpGL.ico",
+        "contentFiles/any/netcoreapp3.0/SharpGL.png",
+        "contentFiles/any/netcoreapp3.1/SharpGL.ico",
+        "contentFiles/any/netcoreapp3.1/SharpGL.png",
+        "lib/net40/SharpGL.WinForms.dll",
+        "lib/net40/SharpGL.WinForms.xml",
+        "lib/net45/SharpGL.WinForms.dll",
+        "lib/net45/SharpGL.WinForms.xml",
+        "lib/net472/SharpGL.WinForms.dll",
+        "lib/net472/SharpGL.WinForms.xml",
+        "lib/netcoreapp3.0/SharpGL.WinForms.dll",
+        "lib/netcoreapp3.0/SharpGL.WinForms.xml",
+        "lib/netcoreapp3.1/SharpGL.WinForms.dll",
+        "lib/netcoreapp3.1/SharpGL.WinForms.xml",
+        "sharpgl.winforms.3.1.1.nupkg.sha512",
+        "sharpgl.winforms.nuspec"
+      ]
+    },
+    "SharpGL.WPF/3.1.1": {
+      "sha512": "8L1w5owBTSrj4TMKilUBu4trDwSuZEbU9QK2GNGOXNmWTVDvCuqmFhL5Jlio8yV8uOsdst3Wwnf1fYXrPIXYWA==",
+      "type": "package",
+      "path": "sharpgl.wpf/3.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/SharpGL.WPF.dll",
+        "lib/net40/SharpGL.WPF.xml",
+        "lib/net45/SharpGL.WPF.dll",
+        "lib/net45/SharpGL.WPF.xml",
+        "lib/net472/SharpGL.WPF.dll",
+        "lib/net472/SharpGL.WPF.xml",
+        "lib/netcoreapp3.0/SharpGL.WPF.dll",
+        "lib/netcoreapp3.0/SharpGL.WPF.xml",
+        "lib/netcoreapp3.1/SharpGL.WPF.dll",
+        "lib/netcoreapp3.1/SharpGL.WPF.xml",
+        "sharpgl.wpf.3.1.1.nupkg.sha512",
+        "sharpgl.wpf.nuspec"
+      ]
+    },
+    "System.Data.DataSetExtensions/4.5.0": {
+      "sha512": "221clPs1445HkTBZPL+K9sDBdJRB8UN8rgjO3ztB0CQ26z//fmJXtlsr6whGatscsKGBrhJl5bwJuKSA8mwFOw==",
+      "type": "package",
+      "path": "system.data.datasetextensions/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net45/_._",
+        "lib/netstandard2.0/System.Data.DataSetExtensions.dll",
+        "ref/net45/_._",
+        "ref/netstandard2.0/System.Data.DataSetExtensions.dll",
+        "system.data.datasetextensions.4.5.0.nupkg.sha512",
+        "system.data.datasetextensions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Drawing.Common/4.7.0": {
+      "sha512": "v+XbyYHaZjDfn0ENmJEV1VYLgGgCTx1gnfOBcppowbpOAriglYgGCvFCPr2EEZyBvXlpxbEsTwkOlInl107ahA==",
+      "type": "package",
+      "path": "system.drawing.common/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.Drawing.Common.dll",
+        "lib/netstandard2.0/System.Drawing.Common.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.Drawing.Common.dll",
+        "ref/netcoreapp3.0/System.Drawing.Common.dll",
+        "ref/netcoreapp3.0/System.Drawing.Common.xml",
+        "ref/netstandard2.0/System.Drawing.Common.dll",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/unix/lib/netcoreapp2.0/System.Drawing.Common.dll",
+        "runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll",
+        "runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.xml",
+        "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll",
+        "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll",
+        "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.xml",
+        "system.drawing.common.4.7.0.nupkg.sha512",
+        "system.drawing.common.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0-windows7.0": [
+      "ACadSharp >= 1.4.4-alpha",
+      "AutoCAD.NET >= 24.3.0",
+      "SharpGL >= 3.1.1",
+      "SharpGL.SceneGraph >= 3.1.1",
+      "SharpGL.Serialization >= 3.1.1",
+      "SharpGL.WPF >= 3.1.1",
+      "SharpGL.WinForms >= 3.1.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Bigplomat\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Bigplomat\\source\\repos\\WpfApp1\\WpfApp1.csproj",
+      "projectName": "WpfApp1",
+      "projectPath": "C:\\Users\\Bigplomat\\source\\repos\\WpfApp1\\WpfApp1.csproj",
+      "packagesPath": "C:\\Users\\Bigplomat\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Bigplomat\\source\\repos\\WpfApp1\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Bigplomat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0-windows7.0": {
+        "targetAlias": "net6.0-windows",
+        "dependencies": {
+          "ACadSharp": {
+            "target": "Package",
+            "version": "[1.4.4-alpha, )"
+          },
+          "AutoCAD.NET": {
+            "target": "Package",
+            "version": "[24.3.0, )"
+          },
+          "SharpGL": {
+            "target": "Package",
+            "version": "[3.1.1, )"
+          },
+          "SharpGL.SceneGraph": {
+            "target": "Package",
+            "version": "[3.1.1, )"
+          },
+          "SharpGL.Serialization": {
+            "target": "Package",
+            "version": "[3.1.1, )"
+          },
+          "SharpGL.WPF": {
+            "target": "Package",
+            "version": "[3.1.1, )"
+          },
+          "SharpGL.WinForms": {
+            "target": "Package",
+            "version": "[3.1.1, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WPF": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AutoCAD.NET 24.3.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "AutoCAD.NET",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AutoCAD.NET.Core 24.3.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "AutoCAD.NET.Core",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AutoCAD.NET.Model 24.3.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "AutoCAD.NET.Model",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
+}
